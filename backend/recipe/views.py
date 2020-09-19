@@ -5,7 +5,7 @@ from .serializers import RecipeSerializer
 from .models import Recipe
 
 class RecipeView(generics.ListCreateAPIView):
-    queryset = Recipe.objects.all().order_by('title')
+    queryset = Recipe.objects.all()
     serializer_class = RecipeSerializer
 
 
